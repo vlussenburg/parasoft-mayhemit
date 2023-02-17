@@ -2,6 +2,8 @@
 
 set -e
 
+[ -z "${MAYHEM_TOKEN}" ] && echo "Missing MAYHEM_TOKEN env var!" && exit 1
+
 MAYHEM_URL="https://demo.forallsecure.com"
 MAYHEM_USERNAME="vlussenburg@forallsecure.com"
 
