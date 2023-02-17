@@ -1,5 +1,5 @@
 #!/bin/bash
 
 for testcase in testsuite/*; do
-	build/mayhemit ${testcase}
+	cat ${testcase} > build/mayhemit
 done
