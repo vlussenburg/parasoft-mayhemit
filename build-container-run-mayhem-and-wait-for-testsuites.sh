@@ -2,10 +2,11 @@
 
 set -e
 
-[ -z "${MAYHEM_TOKEN}" ] && echo "Missing MAYHEM_TOKEN env var!" && exit 1
+echo "This script uses MAYHEM_TOKEN (mandatory), MAYHEM_URL (optional, default https://demo.forallsecure.com), MAYHEM_USERNAME (optional, default vlussenburg@forallsecure.com) and RUN (optional, can be specified to prevent kicking off a new Mayhem run, no default) env variables"
 
-MAYHEM_URL="https://demo.forallsecure.com"
-MAYHEM_USERNAME="vlussenburg@forallsecure.com"
+[ -z "${MAYHEM_TOKEN}" ] && echo "Missing MAYHEM_TOKEN env var!" && exit 1
+[ -z "${MAYHEM_URL}" ] && MAYHEM_URL="https://demo.forallsecure.com"
+[ -z "${MAYHEM_USERNAME}" ] && MAYHEM_USERNAME="vlussenburg@forallsecure.com"
 
 [ ! -f "mayhem" ] && curl --no-progress-meter -Lo ./mayhem ${MAYHEM_URL}/cli/Linux/mayhem && chmod +x ./mayhem
 
