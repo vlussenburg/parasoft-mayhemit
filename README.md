@@ -21,6 +21,10 @@ Run in order:
   - `run-mayhem-testcases-manually.sh` executes the files in the `testsuites` directory
   - `coverage-report.sh` generates a coverage report from the `MayhemIt.clog` file that is appended to as the test cases in the previous step run
 
+## With and without Mayhem:
+<img width="446" alt="Screenshot 2023-02-17 at 3 30 10 PM" src="https://user-images.githubusercontent.com/726645/219816491-4d019833-fd24-4b67-9a32-7baf11189f79.png">
+<img width="428" alt="Screenshot 2023-02-17 at 3 32 22 PM" src="https://user-images.githubusercontent.com/726645/219816501-08d79071-11ea-4e10-b3ae-0a7e54efe429.png">
+
 ## Manual steps done to create this repository
 - Install Parasoft CppTest (google) in `/home/ubuntu/cpptest`
 - Activate license
