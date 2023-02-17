@@ -25,7 +25,7 @@ Run in order:
 - Install Parasoft CppTest (google) in `/home/ubuntu/cpptest`
 - Activate license
 - Create new project, import code, create build files
-- Use CppTest to generate unit tests
+- Use CppTest to generate unit tests (follow Parasoft guides)
 - Go to `TestSuite_mayhemit_c.c` in CppTest, right click, `Parasoft` > `Add unit test using using Wizard`.
 <img width="1030" alt="image" src="https://user-images.githubusercontent.com/726645/219814297-3e4ccc2f-ac9a-4e4c-8f34-91d35a54f77b.png">
 
